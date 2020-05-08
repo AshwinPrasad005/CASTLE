@@ -2,10 +2,10 @@ class Rectangle{
 
     constructor(x,y,witdh,height,angle){
         var option = {
-            isStatic = true
+            isStatic : true
         }
 
-        this.body = Bodies.rectangle(x,y.witdh,heiht,angle);
+        this.body = Bodies.rectangle(x,y.witdh,height,angle);
         this.height = height;
         this.witdh = witdh;
         World.add(world,this.body);
