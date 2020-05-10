@@ -14,7 +14,7 @@ function setup() {
   var box1 = new Rectangle(200,300,50,100);
 
   engine = Engine.create();
-  world = engine.world;
+  World = engine.world;
 }
 
 function draw() {
