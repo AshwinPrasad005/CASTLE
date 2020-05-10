@@ -8,7 +8,7 @@ class Rectangle{
         this.body = Bodies.rectangle(x,y.witdh,height,angle);
         this.height = height;
         this.witdh = witdh;
-        World.add(world,this.body);
+        world.add(World,this.body);
 
     }
 

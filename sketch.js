@@ -1,4 +1,4 @@
-var ground;
+var ground,world,engine;
 
 const Engine = Matter.Engine;
 const Bodies = Matter.Bodies;
