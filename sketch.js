@@ -1,4 +1,4 @@
-var ground,world,engine;
+var ground,world,engine,box1;
 
 const Engine = Matter.Engine;
 const Bodies = Matter.Bodies;
@@ -11,10 +11,10 @@ function setup() {
 
   ground = createSprite(200,375,400,50);
   
-  var box1 = new Rectangle(200,300,50,100);
+  box1 = new Rectangle(200,300,50,100);
 
   engine = Engine.create();
-  World = engine.world;
+  world = engine.world;
 }
 
 function draw() {
