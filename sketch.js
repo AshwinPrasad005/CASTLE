@@ -4,7 +4,6 @@ const Engine = Matter.Engine;
 const Bodies = Matter.Bodies;
 const World = Matter.World;
 const Body = Matter.World;
-const Render = Matter.World;
 
 function setup() {
   createCanvas(600,600);
