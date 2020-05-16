@@ -6,14 +6,16 @@ const World = Matter.World;
 const Body = Matter.World;
 
 function setup() {
-  createCanvas(600,600);
+  var canvas = createCanvas(600,600);
+
+  background("orange");
 
   ground = createSprite(200,375,400,50);
-  
-  box1 = new Rectangle(200,300,50,100);
 
   engine = Engine.create();
   world = engine.world;
+
+  box1 = new Rectangle(200,300,50,100);
 }
 
 function draw() {
