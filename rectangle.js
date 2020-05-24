@@ -1,26 +1,27 @@
 class Rectangle{
 
-    constructor(x,y,witdh,height){
+    constructor(x,y,width,height){
         var option = {
             isStatic : true
         }
 
-        this.body = Bodies.rectangle(x,y.witdh,height,option);
+        this.body = Bodies.rectangle(x,y,width,height,option);
         this.height = height;
-        this.witdh = witdh;
+        this.width = width;
         World.add(world,this.body);
 
     }
 
      display(){
 
-        var angle = this.body.angle;
+        var pos = this.body.position;
+        //var angle = this.body.angle;
         push();
-        translate(this.body.position.x,this.body.position.y);
-        rotate(angle);
+        
         rectMode(CENTER);
-        rect(this.body,0,0,this.witdh,this.height);
-        pop()
+        fill("red");
+        rect(pos.x,pos.y,this.width,this.height);
+        pop();
 
     }
     
